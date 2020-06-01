@@ -1,6 +1,9 @@
 # python3
-#createdby Mehul Upase
+#Created by Mehul Upase
+#Just google out the Pisano series if you don't understand the code 
+#  https://www.youtube.com/watch?v=Nu-lW-Ifyec&t=315s  -> This video explained by an Youtuber(not me) clears the concept of this code
 
+#Naive Algorithm
 def fibonacci_number_again_naive(n, m):
     assert 0 <= n <= 10 ** 18 and 2 <= m <= 10 ** 3
 
@@ -13,7 +16,7 @@ def fibonacci_number_again_naive(n, m):
 
     return current
 
-
+#Function to Calculate the Pisano Period 
 def Pisanoperiodno(m):
    assert 0 <= n <= 10 ** 18 and 2 <= m <= 10 ** 3
    a=0
@@ -24,6 +27,8 @@ def Pisanoperiodno(m):
        b=c
        if a==0 and b==1:
         return i+1
+    
+#Function to Calculate the modulus 
 def Fmodmcalc(n,m):
      # Getting the period
     pisano_period = Pisanoperiodno(m)
